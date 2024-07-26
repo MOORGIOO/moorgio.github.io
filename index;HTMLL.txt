@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excellence Services Freelance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .nav ul li {
+            float: left;
+        }
+
+        .nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .nav ul li a:hover {
+            background-color: #111;
+        }
+
+        .section {
+            padding: 20px;
+        }
+
+        .section-title {
+            color: #007BFF;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .services ul li {
+            background: white;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        .form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form input[type="text"],
+        .form input[type="email"],
+        .form input[type="url"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button {
+            background-color: #28A745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #218838;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Excellence Services Freelance</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#affiliation">Affiliation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h2 class="section-title">Bienvenue chez Excellence Services Freelance</h2>
+        <p class="section-content">Votre partenaire de confiance pour des services de qualité. Comme un paradis de solutions.</p>
+    </section>
+
+    <section id="services" class="section services">
+        <h2 class="section-title">Nos Services</h2>
+        <ul>
+            <li>Sports et Coaching Personnel</li>
+            <li>Entrepreneuriat et Gestion d'Affaires</li>
+            <li>Maintenance Informatique et Réseaux</li>
+            <li>Développement Personnel et Carrière</li>
+            <li>Services Domestiques</li>
+            <li>Technologie et Internet</li>
+            <li>Vidéo surveillance</li>
+            <li>Chauffeur adapté</li>
+            <li>Technique de panneaux solaires</li>
+            <li>Achat de matériel de construction</li>
+            <li>Résolution de problèmes après construction</li>
+            <li>Immobilier général</li>
+            <li>Achat de véhicules selon les modèles</li>
+            <li>Achat de chiens en fonction du prix</li>
+            <li>Cuisine et Motivation</li>
+            <li>Travail en Équipe et Autonomie Financière</li>
+            <li>Locations et Conciergerie</li>
+            <li>Cyber Sécurité et Investissements</li>
+        </ul>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title">À Propos</h2>
+        <p class="section-content">Découvrez notre mission et nos valeurs.</p>
+        <p class="section-content">Chez Excellence Services Freelance, nous incarnons bien plus qu'un simple prestataire de services ; nous sommes votre partenaire de confiance, garantissant des solutions innovantes et sur mesure pour réaliser vos aspirations. Notre mission est de vous accompagner, individus et entreprises, dans la concrétisation de vos objectifs et l'atteinte de vos ambitions grâce à notre expertise et notre engagement sans faille.</p>
+        <p class="section-content"><strong>Avec nous, vos difficultés n'auront aucune existence.</strong></p>
+    </section>
+
+    <section id="affiliation" class="section">
+        <h2 class="section-title">Programme d'Affiliation</h2>
+        <p class="section-content">Rejoignez notre programme d'affiliation et gagnez des commissions.</p>
+        <form action="submit_affiliate_form.php" method="POST" class="form">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="website">Site Web (facultatif):</label>
+            <input type="url" id="website" name="website">
+
+            <input type="submit" value="S'inscrire" class="button">
+        </form>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-content">Pour toute question ou demande de service, n'hésitez pas à nous contacter.</p>
+        <form action="submit_contact_form.php" method="POST" class="form">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Envoyer" class="button">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Excellence Services Freelance. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
